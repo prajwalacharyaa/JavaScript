@@ -1,5 +1,3 @@
-
-
 var day;
 const date= new Date();
 switch(date.getDay()){
