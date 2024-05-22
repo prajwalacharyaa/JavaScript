@@ -5,12 +5,26 @@
 <h2>The indexOf() Method</h2>
 
 <p id="demo"></p>
-
+<p id="findnumberabove"></p>
 <script>
 const fruits = ["Apple", "Orange", "Apple", "Mango"];
 let position = fruits.indexOf("Apple") + 1;
 
 document.getElementById("demo").innerHTML = "Apple is found in position " + position;
+
+//Find the number above certain value
+const numbers = [2,4,342,32,34,2];
+let mynumber = numbers.find(myFunction);
+
+function myFunction(value, index, array){
+    return value>18;
+}
+
+
+
+document.getElementById("findnumberabove").innerHTML ="First number over 18 is"+ mynumber;
+
+
 </script>
 
 </body>
